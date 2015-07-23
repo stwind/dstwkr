@@ -1,0 +1,18 @@
+%% -*- mode: erlang -*-
+%% ex: ft=erlang ts=2 sw=2 et
+{application, dstwkr,
+ [
+  {description, "Distributed Worker"},
+  {vsn, git},
+  {registered, []},
+  {applications, 
+   [
+    kernel,
+    stdlib,
+    lager,
+    riak_core,
+    exometer
+   ]},
+  {mod, { dstwkr_app, []}},
+  {env, []}
+ ]}.
